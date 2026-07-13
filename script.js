@@ -27,7 +27,7 @@ const cheatForm = document.getElementById('cheatForm');
 cheatForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value;
-  window.location.href = `mailto:hello@northcountrycybersafe.com?subject=Send me the scam cheat sheet&body=Please send the cheat sheet to: ${email}`;
+  window.location.href = `mailto:TechNetIT@proton.me?subject=Send me the scam cheat sheet&body=Please send the cheat sheet to: ${email}`;
 });
 
 // ============================
@@ -45,5 +45,5 @@ contactForm.addEventListener('submit', (e) => {
   const subject = encodeURIComponent(`Website message from ${name}`);
   const body = encodeURIComponent(`${message}\n\nFrom: ${name} (${email})`);
 
-  window.location.href = `mailto:hello@northcountrycybersafe.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:TechNetIT@proton.me?subject=${subject}&body=${body}`;
 });
