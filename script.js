@@ -18,17 +18,10 @@ document.querySelectorAll('.site-nav a').forEach((link) => {
 });
 
 // ============================
-// CHEAT SHEET SIGNUP FORM
-// Currently just opens a pre-filled email.
-// Swap this for Formspree (or similar) once you have a real domain.
+// CHEAT SHEET DOWNLOAD
+// This is now a direct download link in the HTML (no JS needed).
+// If you switch back to email-gated signup later, this is where that code would go again.
 // ============================
-const cheatForm = document.getElementById('cheatForm');
-
-cheatForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = document.getElementById('email').value;
-  window.location.href = `mailto:TechNetIT@proton.me?subject=Send me the scam cheat sheet&body=Please send the cheat sheet to: ${email}`;
-});
 
 // ============================
 // CONTACT FORM
